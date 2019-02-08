@@ -5,7 +5,7 @@ eureka:
   client:
     fetchRegistry: true
     registerWithEureka: true
-	
+    
 logging:
   file: logs/${spring.application.name}.log
   level:
