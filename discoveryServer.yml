@@ -3,8 +3,8 @@ server:
   
 eureka:
   client:
-    fetchRegistry: true
-    registerWithEureka: true
+    fetchRegistry: false
+    registerWithEureka: false
     
 logging:
   file: logs/${spring.application.name}.log
