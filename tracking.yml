@@ -11,7 +11,11 @@ eureka:
 spring:  
   application:
     name: tracking
-    
+
+prueba:
+  nombre: ALFONSO
+
+  
 endpoints:
   health:
     sensitive: false
