@@ -14,6 +14,7 @@ spring:
 
 prueba:
   nombre: ALFONSO
+  apellidos: HERREROS
 
   
 endpoints:
