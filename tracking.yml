@@ -2,17 +2,25 @@
 server:  
   port: 1111   # HTTP port
 
+#spring:  
+  #application:
+    #name: tracking
+  #data:
+    #mongodb:            
+      #host: mongodb
+      #port: 27017
+      #database: fraudwall  
+#      username: alf
+#      password: alf  
+
 spring:  
   application:
     name: tracking
   data:
-    mongodb:            
-      host: mongodb
+    mongodb:
+      host: localhost
       port: 27017
-      database: fraudwall  
-      username: alf
-      password: alf  
-          
+      database: fraudwall            
  
 logging:
   file: logs/${spring.application.name}.log
