@@ -26,6 +26,8 @@ spring:
     consumer:
       group-id: myGroup
 
+	  
+	  
 #  cloud:
 #    stream:
 #      kafka:
@@ -61,9 +63,6 @@ logging:
     com.docomo.fraudwall: 'INFO' 
     org.springframework.kafka: 'INFO'
           
-prueba:
-  nombre: ALFONSO
-  apellidos: HERREROS
 
 endpoints:
   health:
@@ -72,47 +71,5 @@ endpoints:
     enabled: true
   shutdown:
     enabled: true
-    
-    
-
-## HTTP Server
-# HTTP Server
-server:  
-  port: 8080   # HTTP port
-
-spring:  
-  application:
-    name: tracking
-  data:
-    mongodb:            
-      host: mongodb
-      port: 27017
-      database: fraudwall  
-      username: alf
-      password: alf  
-          
- 
-logging:
-  file: logs/${spring.application.name}.log
-  pattern:
-    console: "%d %-5level %logger{5} %M : %msg%n"
-    file: "%d %-5level %logger{5} %M : %msg%n"
-  level:
-    com.netflix.discovery: 'OFF'
-    org.springframework.cloud: 'INFO'
-    org.springframework.web: 'INFO'
-    com.atsistemas.omega: 'DEBUG' 
-          
-prueba:
-  nombre: ALFONSO
-  apellidos: HERREROS
-
-endpoints:
-  health:
-    sensitive: false
-  restart:
-    enabled: true
-  shutdown:
-    enabled: true
-    
+   
     
