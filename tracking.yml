@@ -20,8 +20,35 @@ spring:
     mongodb:
       host: localhost
       port: 27017
-      database: fraudwall            
- 
+      database: fraudwall
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      group-id: myGroup
+
+#  cloud:
+#    stream:
+#      kafka:
+#        sleuth:
+#          enabled: true
+#          sampler.percentage: '1.0'
+#        binder:
+#          zkNodes: kafka
+#          brokers: kafka
+#          defaultZkPort: 2181
+#          defaultBrokerPort: 9092
+#          autoAddPartitions: true
+#          headers:
+#            - spanId
+#            - spanSampled
+#            - spanProcessId
+#            - spanParentSpanId
+#            - spanTraceId
+#            - spanName
+#            - messageSent
+
+
+			
 logging:
   file: logs/${spring.application.name}.log
   pattern:
@@ -31,7 +58,8 @@ logging:
     com.netflix.discovery: 'OFF'
     org.springframework.cloud: 'INFO'
     org.springframework.web: 'INFO'
-    com.docomo.fraudwall: 'DEBUG' 
+    com.docomo.fraudwall: 'INFO' 
+    org.springframework.kafka: 'INFO'
           
 prueba:
   nombre: ALFONSO
@@ -46,38 +74,45 @@ endpoints:
     enabled: true
     
     
+
+## HTTP Server
 # HTTP Server
-#server:  
-#  port: 8080   # HTTP port
+server:  
+  port: 8080   # HTTP port
 
-# Discovery Server Access
-#eureka:  
-#  client:
-#    serviceUrl:
-#      defaultZone: http://localhost:8761/eureka/
+spring:  
+  application:
+    name: tracking
+  data:
+    mongodb:            
+      host: mongodb
+      port: 27017
+      database: fraudwall  
+      username: alf
+      password: alf  
+          
+ 
+logging:
+  file: logs/${spring.application.name}.log
+  pattern:
+    console: "%d %-5level %logger{5} %M : %msg%n"
+    file: "%d %-5level %logger{5} %M : %msg%n"
+  level:
+    com.netflix.discovery: 'OFF'
+    org.springframework.cloud: 'INFO'
+    org.springframework.web: 'INFO'
+    com.atsistemas.omega: 'DEBUG' 
+          
+prueba:
+  nombre: ALFONSO
+  apellidos: HERREROS
 
-#spring:  
-#  application:
-#    name: tracking
-#
-#prueba:
-#  nombre: ALFONSO
-#  apellidos: HERREROS
-
-
-#mongodb
-#spring:
-#  data:
-#    mongodb:
-#      host: localhost
-#      port: 27017
-#      database: app1
-
-#  
-#endpoints:
-#  health:
-#    sensitive: false
-#  restart:
-#    enabled: true
-#  shutdown:
-#    enabled: true	  
+endpoints:
+  health:
+    sensitive: false
+  restart:
+    enabled: true
+  shutdown:
+    enabled: true
+    
+    
