@@ -29,7 +29,11 @@ spring:
     name: tracking
   profiles:
     active: ${SPRING_PROFILES_ACTIVE}    
-    
+
+kafka:
+  bootstrap-servers: kafka
+  topic: FRAUD-WALL-NEW
+  port: ${PORT_KAFKA_PRODUCER}    
 
 ---
 spring:
@@ -40,9 +44,9 @@ spring:
       port: 27017
       database: fraudwall
       
-kafka:
-  bootstrap-servers: localhost:9092     
-  topic: FRAUD-WALL-NEW
+#kafka:
+#  bootstrap-servers: localhost:9092     
+#  topic: FRAUD-WALL-NEW
   
 --- 
 spring:
@@ -62,9 +66,6 @@ spring:
     mongodb:            
       host: mongodb
  
-kafka:
-  bootstrap-servers: kafka
-  topic: FRAUD-WALL-NEW
-  port: ${PORT_KAFKA_PRODUCER}
+
   
   
