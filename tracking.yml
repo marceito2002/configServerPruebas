@@ -2,49 +2,7 @@
 server:  
   port: 1111   # HTTP port
 
-#spring:  
-  #application:
-    #name: tracking
-  #data:
-    #mongodb:            
-      #host: mongodb
-      #port: 27017
-      #database: fraudwall  
-#      username: alf
-#      password: alf  
 
-spring:  
-  application:
-    name: tracking
-  data:
-    mongodb:
-      host: localhost
-      port: 27017
-      database: fraudwall
-         
-kafka:
-  bootstrap-servers: localhost:9092     
-      
-#  cloud:
-#    stream:
-#      kafka:
-#        sleuth:
-#          enabled: true
-#          sampler.percentage: '1.0'
-#        binder:
-#          zkNodes: kafka
-#          brokers: kafka
-#          defaultZkPort: 2181
-#          defaultBrokerPort: 9092
-#          autoAddPartitions: true
-#          headers:
-#            - spanId
-#            - spanSampled
-#            - spanProcessId
-#            - spanParentSpanId
-#            - spanTraceId
-#            - spanName
-#            - messageSent    
 logging:
   file: logs/${spring.application.name}.log
   pattern:
@@ -57,9 +15,6 @@ logging:
     com.docomo.fraudwall: 'INFO' 
     org.springframework.kafka: 'INFO'
           
-prueba:
-  nombre: ALFONSO
-  apellidos: HERREROS
 
 endpoints:
   health:
@@ -68,45 +23,48 @@ endpoints:
     enabled: true
   shutdown:
     enabled: true
-    
+
+spring:  
+  application:    
+    name: tracking
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}    
     
 
-## HTTP Server
-# HTTP Server
-#server:  
-#  port: 8080   # HTTP port
-#
-#spring:  
-#  application:
-#    name: tracking
-#  data:
-#    mongodb:            
-#      host: mongodb
-#      port: 27017
-#      database: fraudwall  
-#      username: alf
-#      password: alf  
-          
+---
+spring:
+  profiles: local
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: fraudwall
+      
+kafka:
+  bootstrap-servers: localhost:9092     
+  topic: FRAUD-WALL-NEW
+  
+--- 
+spring:
+  profiles: openshift
+  data:
+    mongodb:            
+      host: mongodb
+      #port: 27017
+      database: data  
+      username: alf
+      password: alf    
+
+--- 
+spring:
+  profiles: docker
+  data:
+    mongodb:            
+      host: mongodb
  
-#logging:
-#  file: logs/${spring.application.name}.log
-#  pattern:
-#    console: "%d %-5level %logger{5} %M : %msg%n"
-#    file: "%d %-5level %logger{5} %M : %msg%n"
-#  level:
-#    com.netflix.discovery: 'OFF'
-#    org.springframework.cloud: 'INFO'
-#    org.springframework.web: 'INFO'
-#    com.atsistemas.omega: 'DEBUG' 
-#          
-#prueba:
-#  nombre: ALFONSO
-#  apellidos: HERREROS
-#
-#endpoints:
-#  health:
-#    sensitive: false
-#  restart:
-#    enabled: true
-#  shutdown:
-#    enabled: true
+kafka:
+  bootstrap-servers: kafka
+  topic: FRAUD-WALL-NEW
+  port: ${PORT_KAFKA_PRODUCER}
+  
+  
