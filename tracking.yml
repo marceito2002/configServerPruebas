@@ -40,7 +40,8 @@ spring:
       database: fraudwall
       
 kafka:
-  bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com:7183
+  bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com
+  port: 7183
   topic: FRAUD-WALL-NEW
   
 --- 
