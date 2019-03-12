@@ -40,8 +40,8 @@ spring:
       database: fraudwall
       
 kafka:
-  bootstrap-servers: PLAINTEXT://kafka
-  port: 9092
+  bootstrap-servers: kafka
+  port: ${PORT_KAFKA_PRODUCER}
   topic: FRAUD-WALL-NEW
   
 --- 
