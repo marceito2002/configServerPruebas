@@ -40,7 +40,7 @@ spring:
       database: fraudwall
       
 kafka:
-  bootstrap-servers: kafka
+  bootstrap-servers: localhost
   port: ${PORT_KAFKA_PRODUCER}
   topic: FRAUD-WALL-NEW
   
