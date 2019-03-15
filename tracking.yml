@@ -24,6 +24,10 @@ endpoints:
   shutdown:
     enabled: true
 
+msg:
+  partnerNameNoExist: Error token generated. partnerId not exist. 
+  ssesionSuccess: Token generated Successfully
+
 spring:  
   application:    
     name: tracking
