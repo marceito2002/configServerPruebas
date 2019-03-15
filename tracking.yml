@@ -25,8 +25,9 @@ endpoints:
     enabled: true
 
 msg:
-  partnerNameNoExist: Error token generated. partnerId not exist. 
+  partnerNameNoExist: Error to generate session, partnerId not exist. 
   ssesionSuccess: Token generated Successfully
+  tokenOrPartnerNoExist: Session/partnerName not exist
 
 spring:  
   application:    
