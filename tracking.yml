@@ -50,6 +50,8 @@ kafka:
   topic: FRAUD-WALL-NEW      
   keyTab: C:\\borrar\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  properties:
+     protocol: SASL_SSL
 #kafka:
 #  bootstrap-servers: localhost
 #  port: ${PORT_KAFKA_PRODUCER}
