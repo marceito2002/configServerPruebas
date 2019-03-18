@@ -43,11 +43,17 @@ spring:
       host: localhost
       port: 27017
       database: fraudwall
-      
+
 kafka:
-  bootstrap-servers: localhost
-  port: ${PORT_KAFKA_PRODUCER}
-  topic: FRAUD-WALL-NEW
+  bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com
+  port: 9092
+  topic: FRAUD-WALL-NEW      
+  keyTab: C:\\borrar\\hdp_b2bp_app.keytab
+  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+#kafka:
+#  bootstrap-servers: localhost
+#  port: ${PORT_KAFKA_PRODUCER}
+#  topic: FRAUD-WALL-NEW
   
 --- 
 spring:
