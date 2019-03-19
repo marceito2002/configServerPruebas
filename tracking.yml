@@ -52,13 +52,6 @@ kafka:
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   properties:
      protocol: SASL_SSL
-	 
-#  kafka-console-consumer --new-consumer --topic test1 --from-beginning --bootstrap-server mid1-db145hdflcatpp-1.hd.docomodigital.com:9092 --consumer.config client.properties
-	 
-
-
-	 
-
 
 #kafka:
 #  bootstrap-servers: localhost
