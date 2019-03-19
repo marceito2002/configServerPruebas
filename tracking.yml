@@ -45,7 +45,7 @@ spring:
       database: fraudwall
 
 kafka:
-  bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com
+  bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com  mid1-db136hdpp-4,mid1-db136hdpp-5,mid1-db136hdpp-6:2181/ddsfw
   port: 9092
   topic: HDP_FW_TRACK      
   keyTab: C:\\borrar\\hdp_b2bp_app.keytab
