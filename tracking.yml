@@ -47,7 +47,7 @@ spring:
 kafka:
   bootstrap-servers: mid1-db136hdpp-1.hd.docomodigital.com
   port: 9092
-  topic: FRAUD-WALL-NEW      
+  topic: HDP_FW_TRACK      
   keyTab: C:\\borrar\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   properties:
@@ -55,7 +55,7 @@ kafka:
 #kafka:
 #  bootstrap-servers: localhost
 #  port: ${PORT_KAFKA_PRODUCER}
-#  topic: FRAUD-WALL-NEW
+#  topic: HDP_FW_TRACK
   
 --- 
 spring:
@@ -70,7 +70,7 @@ spring:
 
 kafka:
   bootstrap-servers: kafka
-  topic: FRAUD-WALL-NEW
+  topic: HDP_FW_TRACK
   port: ${PORT_KAFKA_PRODUCER}    
 --- 
 spring:
@@ -81,7 +81,7 @@ spring:
  
 kafka:
   bootstrap-servers: kafka
-  topic: FRAUD-WALL-NEW
+  topic: HDP_FW_TRACK
   port: ${PORT_KAFKA_PRODUCER}    
 
   
