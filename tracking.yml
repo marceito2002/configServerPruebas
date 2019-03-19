@@ -34,9 +34,6 @@ spring:
     name: tracking
   profiles:
     active: ${SPRING_PROFILES_ACTIVE}    
-  kafka:
-    producer: 
-      client-id: "ALFONSO"
 
 ---
 spring:
@@ -54,8 +51,8 @@ kafka:
   topic: HDP_FW_TRACK      
   keyTab: C:\borrar\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  properties:
-     protocol: SASL_SSL
+# properties:
+#    protocol: SASL_SSL
 
 #kafka:
 #  bootstrap-servers: localhost
