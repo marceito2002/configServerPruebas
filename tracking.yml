@@ -46,7 +46,7 @@ spring:
       database: fraudwall
 
 kafka:   
-  bootstrap-servers: mid1-db248hdflddsfwpp-1:9092
+  bootstrap-servers: mid1-db248hdflddsfwpp-1:9092,mid1-db248hdflddsfwpp-3:9092,mid1-db248hdflddsfwpp-2:9092
   
 #mid1-db145hdflcatpp-1.hd.docomodigital.com:9092,mid1-db145hdflcatpp-2.hd.docomodigital.com:9092,mid1-db145hdflcatpp-3.hd.docomodigital.com:9092,mid1-db248hdflddsfwpp-1:9092
   port: 9092
