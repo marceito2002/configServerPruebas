@@ -54,7 +54,7 @@ kafka:
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   security: SASL_PLAINTEXT
   useKeyTab: true
-  storeKey:
+  storeKey: true
   clientIdConfig: fraudwall-spring
   
 # properties:
@@ -76,10 +76,16 @@ spring:
       username: alf
       password: alf    
 
-kafka:
-  bootstrap-servers: kafka
-  topic: HDP_FW_TRACK
-  port: ${PORT_KAFKA_PRODUCER}    
+kafka:   
+  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
+  port: 9092
+  topic: HDP_FW_TRACK        
+  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  security: SASL_PLAINTEXT
+  useKeyTab: true
+  storeKey: true
+  clientIdConfig: fraudwall-spring
+
 
 --- 
 spring:
