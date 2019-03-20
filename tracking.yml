@@ -52,10 +52,10 @@ kafka:
   topic: HDP_FW_TRACK        
   keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: 
-  useKeyTab:
+  security: SASL_PLAINTEXT
+  useKeyTab: true
   storeKey:
-  clientIdConfig:
+  clientIdConfig: fraudwall-spring
   
 # properties:
 #    protocol: SASL_SSL
