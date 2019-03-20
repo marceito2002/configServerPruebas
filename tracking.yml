@@ -52,6 +52,11 @@ kafka:
   topic: HDP_FW_TRACK        
   keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  security: 
+  useKeyTab:
+  storeKey:
+  clientIdConfig:
+  
 # properties:
 #    protocol: SASL_SSL
 
