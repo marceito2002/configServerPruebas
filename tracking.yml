@@ -112,7 +112,7 @@ spring:
 #  port: ${PORT_KAFKA_PRODUCER}
   
 kafka:   
-  bootstrap-servers: localhost:9092 
+  bootstrap-servers: kafka:9092 
   port: 9092
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
