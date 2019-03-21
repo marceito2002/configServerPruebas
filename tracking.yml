@@ -2,7 +2,12 @@
 server:  
   port: 8080   # HTTP port
 
-
+spring:  
+  application:    
+    name: tracking
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE}    
+    
 logging:
   file: logs/${spring.application.name}.log
   pattern:
@@ -29,11 +34,6 @@ msg:
   ssesionSuccess: Token generated Successfully
   tokenOrPartnerNoExist: Session/partnerName not exist
 
-spring:  
-  application:    
-    name: tracking
-  profiles:
-    active: ${SPRING_PROFILES_ACTIVE}    
 
 ---
 spring:
@@ -76,18 +76,20 @@ spring:
       username: alf
       password: alf    
 
+
 kafka:   
-  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
+  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181 
   port: 9092
   topic: HDP_FW_TRACK        
+  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   security: SASL_PLAINTEXT
   useKeyTab: true
   storeKey: true
-  clientIdConfig: fraudwall-spring
+  clientIdConfig: fraudwall-spring  
 
 
---- 
+---
 spring:
   profiles: docker
   data:
@@ -97,6 +99,4 @@ spring:
 kafka:
   bootstrap-servers: kafka
   topic: HDP_FW_TRACK
-  port: ${PORT_KAFKA_PRODUCER}    
-
- 
+  port: ${PORT_KAFKA_PRODUCER}
