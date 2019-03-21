@@ -71,10 +71,8 @@ spring:
   data:
     mongodb:            
       host: mongodb
-      #port: 27017
-      database: fraudwall  
-      username: alf
-      password: alf    
+      port: 27017
+      database: fraudwall 
 
 
 kafka:   
@@ -95,7 +93,9 @@ spring:
   data:
     mongodb:            
       host: mongodb
- 
+      port: 27017
+      database: fraudwall
+	  
 kafka:
   bootstrap-servers: kafka
   topic: HDP_FW_TRACK
