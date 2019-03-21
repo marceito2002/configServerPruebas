@@ -84,7 +84,6 @@ spring:
 #  useKeyTab: false
 #  storeKey: false
 #  clientIdConfig: fraudwall-spring
-
 kafka:   
   bootstrap-servers: mid1-db248hdflddsfwpp-1:2181 
   port: 9092
