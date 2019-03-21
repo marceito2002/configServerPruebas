@@ -50,8 +50,8 @@ kafka:
 #mid1-db145hdflcatpp-1.hd.docomodigital.com:9092,mid1-db145hdflcatpp-2.hd.docomodigital.com:9092,mid1-db145hdflcatpp-3.hd.docomodigital.com:9092,mid1-db248hdflddsfwpp-1:9092
   port: 9092
   topic: HDP_FW_TRACK        
-  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
-  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
+  #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   security: SASL_PLAINTEXT
   useKeyTab: true
   storeKey: true
@@ -89,8 +89,8 @@ kafka:
   bootstrap-servers: mid1-db248hdflddsfwpp-1:2181 
   port: 9092
   topic: HDP_FW_TRACK        
-  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
-  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
+  #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   security: SASL_PLAINTEXT
   useKeyTab: true
   storeKey: true
@@ -101,7 +101,8 @@ kafka:
 spring:
   profiles: docker
   data:
-    mongodb:            
+    mongodb:
+     host: mongodb	
       #host: mongodb
       #port: 27017
       #database: fraudwall
@@ -114,8 +115,8 @@ kafka:
   bootstrap-servers: localhost:9092 
   port: 9092
   topic: HDP_FW_TRACK        
-  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
-  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
+  #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   security: PLAINTEXT://:9092
   useKeyTab: false
   storeKey: false
