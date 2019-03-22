@@ -40,11 +40,9 @@ spring:
   profiles: local
   data:
     mongodb:            
-      host: mid1-s076stgmng-1.buongiorno.com
+      host: local
       port: 27017
-      database: cat
-      username: cat_user
-      password: mf15mdj
+      
 
 kafka:   
   bootstrap-servers: localhost:9092
