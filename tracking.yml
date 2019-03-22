@@ -51,10 +51,10 @@ kafka:
   port: 9092
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
-  #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: PLAINTEXT
-  useKeyTab: false
-  storeKey: false
+  #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM  
+  security: SASL_PLAINTEXT #PLAINTEXT SASL_PLAINTEXT
+  useKeyTab: true
+  storeKey: true
   clientIdConfig: fraudwall-spring
   
 # properties:
