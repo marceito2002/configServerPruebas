@@ -52,9 +52,9 @@ kafka:
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: #SASL_PLAINTEXT
-  useKeyTab: true
-  storeKey: true
+  security: PLAINTEXT
+  useKeyTab: false
+  storeKey: false
   clientIdConfig: fraudwall-spring
   
 # properties:
@@ -83,14 +83,14 @@ spring:
 #  storeKey: false
 #  clientIdConfig: fraudwall-spring
 kafka:   
-  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
+  bootstrap-servers: kafka
   port: 9092
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: SASL_PLAINTEXT
-  useKeyTab: true
-  storeKey: true
+  security: #SASL_PLAINTEXT
+  useKeyTab: false
+  storeKey: false
   clientIdConfig: fraudwall-spring  
 
 
