@@ -1,6 +1,6 @@
 # HTTP Server
 server:  
-  port: 8080   # HTTP port
+  port: 9090   # HTTP port
 
 spring:  
   application:    
