@@ -31,8 +31,8 @@ endpoints:
 
 msg:
   partnerNameNoExist: Error to generate session, partnerId not exist. 
-  ssesionSuccess: Token generated Successfully
-  tokenOrPartnerNoExist: Session/partnerName not exist
+  ssesionSuccess: Session generated Successfully
+  sessionOrPartnerNoExist: Session/partnerName not exist
 
 
 ---
