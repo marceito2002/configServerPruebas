@@ -33,6 +33,8 @@ msg:
   partnerNameNoExist: Error to generate session, partnerId not exist. 
   ssesionSuccess: Session generated Successfully
   sessionOrPartnerNoExist: Session/partnerName not exist
+  tokenOrPartnerNoExist: Session/partnerName not exist
+  tokenSuccess: Session generated Successfully
 
 
 ---
