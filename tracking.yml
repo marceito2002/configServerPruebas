@@ -73,17 +73,16 @@ spring:
   data:
     mongodb:            
       host: mongodb
-#  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
-  
+  bootstrap-servers: mid1-db145hdflcatpp-1.hd.docomodigital.com:9092,mid1-db145hdflcatpp-2.hd.docomodigital.com:9092,mid1-db145hdflcatpp-3.hd.docomodigital.com:9092,mid1-db248hdflddsfwpp-1:9092  
 #mid1-db145hdflcatpp-1.hd.docomodigital.com:9092,mid1-db145hdflcatpp-2.hd.docomodigital.com:9092,mid1-db145hdflcatpp-3.hd.docomodigital.com:9092,mid1-db248hdflddsfwpp-1:9092
-#  port: 9092
-#  topic: HDP_FW_TRACK        
-#  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
-#  keyTabUser: #hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-#  security: PLAINTEXT://:9092
-#  useKeyTab: false
-#  storeKey: false
-#  clientIdConfig: fraudwall-spring
+  port: 9092
+  topic: HDP_FW_TRACK        
+  keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
+  keyTabUser: #hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  security: PLAINTEXT://:9092
+  useKeyTab: false
+  storeKey: false
+  clientIdConfig: fraudwall-spring
 kafka:   
   bootstrap-servers: kafka:9092
   port: 9092
