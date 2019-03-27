@@ -73,8 +73,10 @@ spring:
   data:
     mongodb:            
       host: mongodb
-      user: alf
+      database: fraudwall
+      username: alf
       password: alf
+	  
 #  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
 
 #mid1-db145hdflcatpp-1.hd.docomodigital.com:9092,mid1-db145hdflcatpp-2.hd.docomodigital.com:9092,mid1-db145hdflcatpp-3.hd.docomodigital.com:9092,mid1-db248hdflddsfwpp-1:9092
