@@ -1,6 +1,6 @@
 # HTTP Server
 server:  
-  port: 9999   # HTTP port
+  port: 2222   # HTTP port
 
 spring:  
   application:    
