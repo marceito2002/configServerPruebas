@@ -45,7 +45,7 @@ spring:
   profiles: openshift
   data:
     mongodb:            
-      host: mongodb
+      host: mongodb2
       database: fraudwall
       username: alf
       password: alf
