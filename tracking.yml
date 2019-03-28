@@ -110,7 +110,7 @@ call:
   partner: 
     protocol: http
     hostname: partner
-    port: 8080
+    port: 2222
     resources: partner
     operation: getById
 
