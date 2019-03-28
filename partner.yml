@@ -46,6 +46,9 @@ spring:
   data:
     mongodb:            
       host: mongodb
+      database: fraudwall
+      username: alf
+      password: alf
 
 
 ---
