@@ -94,18 +94,25 @@ spring:
 #  storeKey: false
 #  clientIdConfig: fraudwall-spring
 kafka:   
-  bootstrap-servers:  192.168.127.142:9092,192.168.127.143:9092,192.168.127.144:9092
+  bootstrap-servers: 192.168.127.142:9092,192.168.127.143:9092,192.168.127.144:9092
   port: 9092
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: SASL_PLAINTEXT
-  useKeyTab: true
-  storeKey: true
+  security: PLAINTEXT
+  useKeyTab: false
+  storeKey: false
   clientIdConfig: fraudwall-spring  
   keyTabPlace: /app/hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   
+call:
+  partner: 
+    protocol: http
+    hostname: partner
+    port: 8080
+    resources: partner
+    operation:getById
 
 ---
 spring:
