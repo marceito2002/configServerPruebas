@@ -63,6 +63,8 @@ kafka:
   useKeyTab: true
   storeKey: true
   clientIdConfig: fraudwall-spring    
+  keyTabPlace: C:\Docomo\proyectos\fraudwall\docker\docker-base-image\hdp_b2bp_app.keytab
+  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM  
 # properties:
 #    protocol: SASL_SSL
 
@@ -101,7 +103,9 @@ kafka:
   useKeyTab: true
   storeKey: true
   clientIdConfig: fraudwall-spring  
-
+  keyTabPlace: /app/hdp_b2bp_app.keytab
+  keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  
 
 ---
 spring:
