@@ -112,7 +112,7 @@ call:
     hostname: partner
     port: 8080
     resources: partner
-    operation:getById
+    operation: getById
 
 ---
 spring:
