@@ -95,7 +95,7 @@ spring:
 #  storeKey: false
 #  clientIdConfig: fraudwall-spring
 kafka:   
-  bootstrap-servers: mid1-db248hdflddsfwpp-1:9092,mid1-db248hdflddsfwpp-2:9092
+  bootstrap-servers: mid1-db248hdflddsfwpp-1:9092,mid1-db248hdflddsfwpp-2:9092, mid1-db248hdflddsfwpp-3:9092
   port: 9092
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
