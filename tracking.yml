@@ -81,7 +81,7 @@ spring:
       host: mongo
       port: 27017
       database: fraudwall
-      username: admin
+      username: alf
       password: alf
 #  bootstrap-servers: mid1-db248hdflddsfwpp-1:2181
 
