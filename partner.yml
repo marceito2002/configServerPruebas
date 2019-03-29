@@ -45,7 +45,8 @@ spring:
   profiles: openshift
   data:
     mongodb:            
-      host: mongodb2
+      host: mongo
+      port: 27017
       database: fraudwall
       username: alf
       password: alf
