@@ -115,7 +115,7 @@ call:
     hostname: partner
     port: 2222
     resources: partner
-    operation: getById
+    operation: getByName
 
 ---
 spring:
