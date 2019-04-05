@@ -36,7 +36,7 @@ msg:
   tokenOrPartnerNoExist: Session/partner Name not exist
   tokenSuccess: Session generated Successfully
   sessionBadPartnerName: There are some partned with the same name
-
+  msgDataInvalid: Date format not valid
 
 ---
 spring:
@@ -63,7 +63,7 @@ kafka:
   security: PLAINTEXT
   useKeyTab: false
   storeKey: false
-  clientIdConfig: fraudwall-spring    
+  clientIdConfig: fraudwall-spring
   keyTabPlace: C:\\Docomo\\proyectos\\fraudwall\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM  
 # properties:
@@ -102,10 +102,11 @@ kafka:
   topic: HDP_FW_TRACK        
   #keyTab: #C:\\borrar\\hdp_b2bp_app.keytab
   #keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-  security: PLAINTEXT
-  useKeyTab: false
-  storeKey: false
-  clientIdConfig: fraudwall-spring  
+  security: SASL_SSL
+  #security: PLAINTEXT
+  useKeyTab: true
+  storeKey: true
+  clientIdConfig: test
   keyTabPlace: /app/hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   
