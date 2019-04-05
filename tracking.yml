@@ -105,7 +105,7 @@ kafka:
   security: SASL_PLAINTEXT
   #security: PLAINTEXT
   useKeyTab: true
-  storeKey: true
+  storeKey: false
   clientIdConfig: test
   keyTabPlace: /app/hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
