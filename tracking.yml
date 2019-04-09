@@ -58,7 +58,6 @@ kafka:
   keyTabPlace: C:\\Docomo\\proyectos\\fraudwall\\hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM  
 
-  
 hbase:
   zookeeper:
     quorum: localhost
@@ -66,7 +65,7 @@ hbase:
   table:
     name: testalf
     nameSpace: fraudwall
-	
+
 --- 
 spring:
   profiles: openshift
@@ -89,7 +88,7 @@ kafka:
   keyTabPlace: /app/hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
   kerberosServiceName: kafka
-  
+
 hbase:
   zookeeper:
     quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
@@ -103,7 +102,7 @@ hbase:
     nameSpace: fraudwall
 
 
-		 
+
 call:
   partner: 
     protocol: http
@@ -124,7 +123,7 @@ spring:
     mongodb:
      host: mongodb	
 
-  
+
 kafka:   
   bootstrap-servers: kafka:9092 
   port: 9092
@@ -133,7 +132,7 @@ kafka:
   useKeyTab: false
   storeKey: false
   clientIdConfig: fraudwall-spring    
-  
+
 hbase:
   zookeeper:
     quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
@@ -144,4 +143,4 @@ hbase:
     keytab: /home/alfonso.herreros/hdp_b2bp_app.keytab
   table:
     name: testalf
-    nameSpace: fraudwall  
+    nameSpace: fraudwall
