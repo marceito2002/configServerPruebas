@@ -67,6 +67,10 @@ hbase:
     name: testalf
     nameSpace: fraudwall
 
+call:
+  partner: 
+    endpoint: http://localhost:2222/partner/getByName/
+	
 --- 
 spring:
   profiles: openshift
@@ -143,3 +147,7 @@ hbase:
   table:
     name: testalf
     nameSpace: fraudwall
+
+call:
+  partner: 
+    endpoint: http://partner:2222/partner/getByName/
