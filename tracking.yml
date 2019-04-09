@@ -70,7 +70,7 @@ hbase:
 call:
   partner: 
     endpoint: http://localhost:2222/partner/getByName/
-	
+
 --- 
 spring:
   profiles: openshift
