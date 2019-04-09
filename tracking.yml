@@ -60,7 +60,7 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: localhost
+    quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
     clientPort: 2181
   table:
     name: testalf
