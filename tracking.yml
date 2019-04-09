@@ -80,7 +80,22 @@ kafka:
   clientIdConfig: test
   keyTabPlace: /app/hdp_b2bp_app.keytab
   keyTabUser: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+  kerberosServiceName: kafka
   
+hbase:
+  zookeeper:
+    quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
+    clientPort: 2181
+  kerberos:
+    name: kerberos
+    user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+    keytab: /home/alfonso.herreros/hdp_b2bp_app.keytab
+  table:
+    name: testalf
+    nameSpace: fraudwall
+
+
+		 
 call:
   partner: 
     protocol: http
