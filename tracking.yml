@@ -45,6 +45,7 @@ spring:
     mongodb:            
       host: localhost
       port: 27017
+      database: fraudwall
       
 
 kafka:   
@@ -105,11 +106,9 @@ hbase:
 
 call:
   partner: 
-    protocol: http
-    hostname: partner
-    port: 2222
-    resources: partner
-    operation: getByName
+    endpoint: http://partner:2222/partner/getByName/
+	
+
   kafka: 
     protocol: http
     hostname: kafka
