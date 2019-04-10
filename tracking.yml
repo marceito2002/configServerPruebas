@@ -101,7 +101,7 @@ hbase:
   kerberos:
     name: kerberos
     user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-    keytab: /home/alfonso.herreros/hdp_b2bp_app.keytab
+    keytab: /app/hdp_b2bp_app.keytab
   table:
     name: testalf
     nameSpace: fraudwall
