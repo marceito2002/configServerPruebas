@@ -36,7 +36,7 @@ msg:
   tokenOrPartnerNoExist: Session/partner Name not exist
   tokenSuccess: Session generated Successfully
   sessionBadPartnerName: There are some partned with the same name
-  msgDataInvalid: Date format not valid. Example: 20171216 10:20:34:653
+  msgDataInvalid: Date format not valid. Example. 20171216 10\:20\:34\:653
 
 ---
 spring:
