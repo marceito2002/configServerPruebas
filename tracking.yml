@@ -96,11 +96,11 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: 192.168.127.97,192.168.127.96,192.168.127.98
+    quorum: 192.168.127.96,192.168.127.97,192.168.127.98
     clientPort: 2181
   kerberos:
     name: kerberos
-    user: HOST@AD.DOCOMODIGITAL.COM
+    user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
     keytab: /app/hdp_b2bp_app.keytab
   table:
     name: testalf
