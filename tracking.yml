@@ -100,7 +100,7 @@ hbase:
     clientPort: 2181
   kerberos:
     name: kerberos
-    user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+    user: HOST@AD.DOCOMODIGITAL.COM
     keytab: /app/hdp_b2bp_app.keytab
   table:
     name: testalf
