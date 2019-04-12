@@ -110,7 +110,7 @@ hbase:
 
 call:
   partner: 
-    endpoint: http://partnerv1:2222/partner/getByName/
+    endpoint: http://partner:8080/partner/getByName/
 
 
   kafka: 
