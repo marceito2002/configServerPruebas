@@ -100,12 +100,12 @@ hbase:
     clientPort: 2181
   kerberos:
     name: kerberos
-    user: hbase/_HOST@AD.DOCOMODIGITAL.COM
+    user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
+    principal: hbase/_HOST@AD.DOCOMODIGITAL.COM
     keytab: /app/hdp_b2bp_app.keytab
   table:
     name: testalf
     nameSpace: fraudwall
-
 
 
 call:
