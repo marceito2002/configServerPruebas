@@ -1,6 +1,6 @@
 # HTTP Server
 server:  
-  port: 8080   # HTTP port
+  port: 9090   # HTTP port
 
 spring:  
   application:    
@@ -50,7 +50,6 @@ spring:
 
 kafka:   
   bootstrap-servers: localhost:9092
-  port: 9092
   topic: HDP_FW_TRACK        
   security: PLAINTEXT
   useKeyTab: false
@@ -61,7 +60,7 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
+    quorum: 127.0.0.1
     clientPort: 2181
   table:
     name: testalf
@@ -84,7 +83,6 @@ spring:
 
 kafka:   
   bootstrap-servers: 192.168.127.142:9092,192.168.127.143:9092,192.168.127.144:9092 
-  port: 9092
   topic: HDP_FW_TRACK        
   security: SASL_PLAINTEXT
   useKeyTab: true
@@ -112,13 +110,6 @@ call:
   partner: 
     endpoint: http://partner:8080/partner/getByName/
 
-
-  kafka: 
-    protocol: http
-    hostname: kafka
-    port: 3333
-    resources: kafka
-    operation: producer
 ---
 spring:
   profiles: docker
@@ -129,7 +120,6 @@ spring:
 
 kafka:   
   bootstrap-servers: kafka:9092 
-  port: 9092
   topic: HDP_FW_TRACK        
   security: PLAINTEXT
   useKeyTab: false
@@ -138,12 +128,13 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: mid1-db136hdpp-5.hd.docomodigital.com,mid1-db136hdpp-4.hd.docomodigital.com,mid1-db136hdpp-6.hd.docomodigital.com
+    quorum: 192.168.127.96,192.168.127.97,192.168.127.98
     clientPort: 2181
   kerberos:
     name: kerberos
     user: hdp_b2bp_app@AD.DOCOMODIGITAL.COM
-    keytab: /home/alfonso.herreros/hdp_b2bp_app.keytab
+    principal: hbase/_HOST@AD.DOCOMODIGITAL.COM
+    keytab: /app/hdp_b2bp_app.keytab
   table:
     name: testalf
     nameSpace: fraudwall
