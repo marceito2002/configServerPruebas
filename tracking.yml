@@ -102,7 +102,7 @@ hbase:
     principal: hbase/_HOST@AD.DOCOMODIGITAL.COM
     keytab: /app/hdp_b2bp_app.keytab
   table:
-    name: testalf
+    name: execution
     nameSpace: fraudwall
 
 
@@ -136,7 +136,7 @@ hbase:
     principal: hbase/_HOST@AD.DOCOMODIGITAL.COM
     keytab: /app/hdp_b2bp_app.keytab
   table:
-    name: testalf
+    name: execution
     nameSpace: fraudwall
 
 call:
