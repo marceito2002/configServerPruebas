@@ -48,8 +48,8 @@ spring:
       host: mongo
       port: 27017
       database: fraudwall
-      username: alf
-      password: alf
+      username: belen.nunez
+      password: belen
 
 
 ---
