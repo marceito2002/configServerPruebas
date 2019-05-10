@@ -128,7 +128,7 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: 127.0.0.1
+    quorum: myhbase
     clientPort: 2181
   table:
     name: execution
