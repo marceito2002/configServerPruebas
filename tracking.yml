@@ -129,7 +129,7 @@ kafka:
 hbase:
   zookeeper:
     quorum: myhbase
-    clientPort: 2181
+    clientPort: 2182
   table:
     name: execution
     nameSpace: fraudwall
