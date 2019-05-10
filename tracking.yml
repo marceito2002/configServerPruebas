@@ -60,7 +60,7 @@ kafka:
 
 hbase:
   zookeeper:
-    quorum: hbaselocal
+    quorum: localhost
     clientPort: 2181
   table:
     name: execution
