@@ -63,7 +63,7 @@ hbase:
     quorum: 127.0.0.1
     clientPort: 2181
   table:
-    name: testalf
+    name: execution
     nameSpace: fraudwall
 
 call:
