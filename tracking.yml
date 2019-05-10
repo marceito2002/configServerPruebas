@@ -108,7 +108,7 @@ hbase:
 
 call:
   partner: 
-    endpoint: http://partner:8080/partner/getByName/
+    endpoint: http://partner:2222/partner/getByName/
 
 ---
 spring:
